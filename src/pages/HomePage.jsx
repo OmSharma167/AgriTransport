@@ -8,7 +8,7 @@ const vehicleCategories = [
     name: 'Tractors',
     icon: Tractor,
     description: 'Agricultural tractors for farming needs',
-    image: 'https://images.unsplash.com/photo-1599932047669-a8e574986111?auto=format&fit=crop&q=80&w=1000',
+    image: 'https://cdn.agriland.ie/uploads/2018/10/20170916_1257580.jpg',
     color: 'bg-green-500'
   },
   {
@@ -16,7 +16,7 @@ const vehicleCategories = [
     name: 'Trucks',
     icon: Truck,
     description: 'Heavy-duty trucks for transportation',
-    image: 'https://images.unsplash.com/photo-1586191582056-b5d6b911f52b?auto=format&fit=crop&q=80&w=1000',
+    image: 'http://upload.wikimedia.org/wikipedia/commons/a/ae/SEPT_17TH_LOS_ANGELES_INTERNATIONAL_TRUCK_PHOTO_PATRICE_RAUNET_HOLLYWOOD.jpg',
     color: 'bg-blue-500'
   },
   {
@@ -27,14 +27,7 @@ const vehicleCategories = [
     image: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1000',
     color: 'bg-purple-500'
   },
-  {
-    id: 'vans',
-    name: 'Vans',
-    icon: Bus,
-    description: 'Spacious vans for group travel',
-    image: 'https://images.unsplash.com/photo-1558383331-f520f2888351?auto=format&fit=crop&q=80&w=1000',
-    color: 'bg-orange-500'
-  }
+  
 ];
 
 function HomePage() {
@@ -78,7 +71,7 @@ function HomePage() {
           Browse by Category
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1  lg:grid-cols-3 gap-8">
           {vehicleCategories.map((category) => {
             const Icon = category.icon;
             return (
